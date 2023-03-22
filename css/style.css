@@ -1,17 +1,27 @@
-
-  
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
 body {
-    color: #000000; 
-    font-size: 14px;
-    font-family: 'Roboto Mono', monospace;
-    line-height: 1.80857;
-    background-color: white;
+  color: #000000;
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.80857;
+  background-color: white;
 }
 
-html, body{
-	height: 100%;
+html,
+body {
+  height: 100%;
 }
-
 
 .cd-words-wrapper {
   display: inline-block;
@@ -29,9 +39,8 @@ html, body{
   position: relative;
 }
 
-
-.cd-headline.clip span b{
-	text-transform: uppercase;
+.cd-headline.clip span b {
+  text-transform: uppercase;
 }
 .cd-headline.clip .cd-words-wrapper {
   overflow: hidden;
@@ -39,7 +48,7 @@ html, body{
 }
 .cd-headline.clip .cd-words-wrapper::after {
   /* line */
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -53,4 +62,3 @@ html, body{
 .cd-headline.clip b.is-visible {
   opacity: 1;
 }
-
